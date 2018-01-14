@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">
-    <link rel="alternate stylesheet" href="smthn.css" title="night">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">-->
+    <link id="style1" rel="stylesheet" href="something.css" title="day">
 
     <title>Warhammer 40.000</title>
     <link rel="stylesheet" href="test.css" type="text/css">
 </head>
-<body class="testbody">
+<body>
 <div id="wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -62,54 +62,51 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
+            </div>
         </div>
     </nav>
-
 </div>
-    <div id="intro">
-        <img id="intro-img" class="mx-auto mt-2" src="testimg/drivemecloser.png" >
-        <h1 class="mt-2">Warhammer 40.000</h1>
-        <p id="intro-p" class="mx-auto"> "It is the 41st Millennium. For more than a hundred centuries the Emperor of Mankind has sat immobile on the
-            Golden
-            Throne of Earth. He is the master of mankind by the will of the gods and master of a million worlds by the
-            might of
-            His inexhaustible armies. He is a rotting carcass writhing invisibly with power from the Dark Age of
-            Technology. He
-            is the Carrion Lord of the vast Imperium of Man for whom a thousand souls are sacrificed every day so that
-            He may
-            never truly die.
-            <br>
-            <br>
-            Yet even in His deathless state, the Emperor continues His eternal vigilance. Mighty battlefleets cross the
-            daemon-infested miasma of the Warp, the only route between distant stars, their way lit by the Astronomican,
-            the
-            psychic manifestation of the Emperor's will. Vast armies give battle in His name on uncounted worlds.
-            Greatest
-            amongst His soldiers are the Adeptus Astartes, the Space Marines, bio-engineered super-warriors. Their
-            comrades in
-            arms are legion: the Imperial Guard and countless planet ary defence forces, the ever-vigilant Inquisition
-            and the
-            Tech-priests of the Adeptus Mechanicus to name only a few. But for all their multitudes, they are barely
-            enough to
-            hold off the ever-present threat to humanity from aliens, heretics, mutants -- and far, far worse.
-            <br>
-            <br>
-            To be a man in such times is to be one amongst untold billions. It is to live in the cruelest and most
-            bloody regime
-            imaginable. These are the tales of those times. Forget the power of technology and science, for so much has
-            been
-            forgotten, never to be relearned. Forget the promise of progress and understanding, for in the grim dark
-            future
-            there is only war. There is no peace amongst the stars, only an eternity of carnage and slaughter, and the
-            laughter
-            of thirsting gods."
-        </p>
-    </div>
-<div id="form">
-<form>
-    <input class="hidebutton1" type="submit" onclick="switch_style('day');return false;" name="theme" value="Night theme: Off" id="day">
-    <input class="hidebutton2" type="submit" onclick="switch_style('night');return false; " name="theme" value="Night Theme: On" id="night">
-</form>
+<div id="intro">
+    <img id="intro-img" class="mx-auto mt-2" src="testimg/drivemecloser.png">
+    <h1 class="mt-2">Warhammer 40.000</h1>
+    <p id="intro-p" class="mx-auto"> "It is the 41st Millennium. For more than a hundred centuries the Emperor of
+        Mankind has sat immobile on the
+        Golden
+        Throne of Earth. He is the master of mankind by the will of the gods and master of a million worlds by the
+        might of
+        His inexhaustible armies. He is a rotting carcass writhing invisibly with power from the Dark Age of
+        Technology. He
+        is the Carrion Lord of the vast Imperium of Man for whom a thousand souls are sacrificed every day so that
+        He may
+        never truly die.
+        <br>
+        <br>
+        Yet even in His deathless state, the Emperor continues His eternal vigilance. Mighty battlefleets cross the
+        daemon-infested miasma of the Warp, the only route between distant stars, their way lit by the Astronomican,
+        the
+        psychic manifestation of the Emperor's will. Vast armies give battle in His name on uncounted worlds.
+        Greatest
+        amongst His soldiers are the Adeptus Astartes, the Space Marines, bio-engineered super-warriors. Their
+        comrades in
+        arms are legion: the Imperial Guard and countless planetary defence forces, the ever-vigilant Inquisition
+        and the
+        Tech-priests of the Adeptus Mechanicus to name only a few. But for all their multitudes, they are barely
+        enough to
+        hold off the ever-present threat to humanity from aliens, heretics, mutants -- and far, far worse.
+        <br>
+        <br>
+        To be a man in such times is to be one amongst untold billions. It is to live in the cruelest and most
+        bloody regime
+        imaginable. These are the tales of those times. Forget the power of technology and science, for so much has
+        been
+        forgotten, never to be relearned. Forget the promise of progress and understanding, for in the grim dark
+        future
+        there is only war. There is no peace amongst the stars, only an eternity of carnage and slaughter, and the
+        laughter
+        of thirsting gods."
+    </p>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -122,76 +119,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
-<script>
-    function hide_other_button() {
-        var hidebutton = document.getElementsByClassname("input")
-        if (hidebutton.style.display === "none") {
-            hidebutton.style.display = "block";
-        } else {
-            hidebutton.style.display = "none";
-        }
-    }
-    // *** TO BE CUSTOMISED ***
-
-    var style_cookie_name = "style" ;
-    var style_cookie_duration = 30 ;
-    var style_domain = "thesitewizard.com" ;
-
-    // *** END OF CUSTOMISABLE SECTION ***
-    // You do not need to customise anything below this line
-
-    function switch_style ( css_title )
-    {
-    // You may use this script on your site free of charge provided
-    // you do not remove this notice or the URL below. Script from
-    // https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
-    var i, link_tag ;
-    for (i = 0, link_tag = document.getElementsByTagName("link") ;
-    i < link_tag.length ; i++ ) {
-    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
-    link_tag[i].title) {
-    link_tag[i].disabled = true ;
-    if (link_tag[i].title == css_title) {
-    link_tag[i].disabled = false ;
-    }
-    }
-    set_cookie( style_cookie_name, css_title,
-    style_cookie_duration, style_domain );
-    }
-    }
-    function set_style_from_cookie()
-    {
-    var css_title = get_cookie( style_cookie_name );
-    if (css_title.length) {
-    switch_style( css_title );
-    }
-    }
-    function set_cookie ( cookie_name, cookie_value,
-    lifespan_in_days, valid_domain )
-    {
-    // https://www.thesitewizard.com/javascripts/cookies.shtml
-    var domain_string = valid_domain ?
-    ("; domain=" + valid_domain) : '' ;
-    document.cookie = cookie_name +
-    "=" + encodeURIComponent( cookie_value ) +
-    "; max-age=" + 60 * 60 *
-    24 * lifespan_in_days +
-    "; path=/" + domain_string ;
-    }
-    function get_cookie ( cookie_name )
-    {
-    // https://www.thesitewizard.com/javascripts/cookies.shtml
-    var cookie_string = document.cookie ;
-    if (cookie_string.length != 0) {
-    var cookie_value = cookie_string.match (
-    '(^|;)[\s]*' +
-    cookie_name +
-    '=([^;]*)' );
-    return decodeURIComponent ( cookie_value[2] ) ;
-    }
-    return '' ;
-    }
-
-</script>
+<script src="test.js"></script>
 </body>
 </html>

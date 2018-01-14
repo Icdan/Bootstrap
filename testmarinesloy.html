@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">-->
+    <link id="style1" rel="stylesheet" href="something.css" title="day">
 
     <title>Space Marines</title>
     <link rel="stylesheet" href="test.css" type="text/css">
@@ -61,45 +62,48 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
+            </div>
         </div>
     </nav>
-    <div id="intro">
-        <img id="intro-img2" class="mx-auto mt-2" src="testimg/ultramarine.jpg">
-        <h1>Space Marines</h1>
-        <p id="testbody" class="mx-auto ca"> "They shall be my finest warriors, these men who give of themselves to me.
-            Like clay I shall mould them, and in
-            the furnace of war forge them. They will be of iron will and steely muscle. In great armour shall I clad
-            them
-            and with the mightiest guns will they be armed. They will be untouched by plague or disease, no sickness
-            will
-            blight them. They will have tactics, strategies and machines so that no foe can best them in battle. They
-            are my
-            bulwark against the Terror. They are the Defenders of Humanity. They are my Space Marines and they shall
-            know no
-            fear."
-        </p>
-        <p class="mx-5">
-            The Space Marines or Adeptus Astartes are foremost amongst the defenders of humanity, the greatest of the
-            Emperor of Mankind's warriors. They are barely human at all, but superhuman; having been made superior in
-            all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous
-            training. Space Marines are untouched by plague or any natural disease and can suffer wounds that would kill
-            a lesser being several times over, and live to fight again. Clad in ancient Power Armour and wielding the
-            most potent weapons known to Man, the Space Marines are terrifying foes and their devotion to the Emperor
-            and the Imperium of Man is unyielding. They are the God-Emperor's Angels of Death, and they know no fear.
-            <br><br>
-            The Astartes are physically stronger, far more resilient and often mentally far removed from the lot of most
-            normal human beings. In the presence of the Astartes, most people feel a combination of awe and fear, and
-            many cultures on the more primitive worlds simply worship them outright as demigods or angels of the
-            God-Emperor made flesh. They should feel so, for many Space Marines feel little compassion for those they
-            have sometimes termed "mortals" in comparison to themselves, seeing the very people they were created to
-            protect as little more than obstacles to a more efficient eradication of the Imperium's enemies. This is an
-            attitude sometimes taken by whole Chapters. They see normal humans as frail, weak creatures given to the
-            follies of temptation, avarice, greed, lust and cowardice -- all emotions they rarely feel, if ever. Yet
-            there are some Astartes who remember why they were created by the Emperor, who avoid the trap of hubris
-            which the Space Marines are so prone to and which has seduced so many of their number to serve the Ruinous
-            Powers of Chaos. They are the final guardians of Mankind, the saviours of last resort.
-        </p>
-    </div>
+</div>
+<div id="intro">
+    <img id="intro-img2" class="mx-auto mt-2" src="testimg/ultramarine.jpg">
+    <h1>Space Marines</h1>
+    <p id="intro-p" class="mx-auto ca"> "They shall be my finest warriors, these men who give of themselves to me.
+        Like clay I shall mould them, and in
+        the furnace of war forge them. They will be of iron will and steely muscle. In great armour shall I clad
+        them
+        and with the mightiest guns will they be armed. They will be untouched by plague or disease, no sickness
+        will
+        blight them. They will have tactics, strategies and machines so that no foe can best them in battle. They
+        are my
+        bulwark against the Terror. They are the Defenders of Humanity.
+        <br><br>
+        They are my Space Marines and they shall know no fear."
+    </p>
+    <p class="mx-5">
+        The Space Marines or Adeptus Astartes are foremost amongst the defenders of humanity, the greatest of the
+        Emperor of Mankind's warriors. They are barely human at all, but superhuman; having been made superior in
+        all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous
+        training. Space Marines are untouched by plague or any natural disease and can suffer wounds that would kill
+        a lesser being several times over, and live to fight again. Clad in ancient Power Armour and wielding the
+        most potent weapons known to Man, the Space Marines are terrifying foes and their devotion to the Emperor
+        and the Imperium of Man is unyielding. They are the God-Emperor's Angels of Death, and they know no fear.
+        <br><br>
+        The Astartes are physically stronger, far more resilient and often mentally far removed from the lot of most
+        normal human beings. In the presence of the Astartes, most people feel a combination of awe and fear, and
+        many cultures on the more primitive worlds simply worship them outright as demigods or angels of the
+        God-Emperor made flesh. They should feel so, for many Space Marines feel little compassion for those they
+        have sometimes termed "mortals" in comparison to themselves, seeing the very people they were created to
+        protect as little more than obstacles to a more efficient eradication of the Imperium's enemies. This is an
+        attitude sometimes taken by whole Chapters. They see normal humans as frail, weak creatures given to the
+        follies of temptation, avarice, greed, lust and cowardice -- all emotions they rarely feel, if ever. Yet
+        there are some Astartes who remember why they were created by the Emperor, who avoid the trap of hubris
+        which the Space Marines are so prone to and which has seduced so many of their number to serve the Ruinous
+        Powers of Chaos. They are the final guardians of Mankind, the saviours of last resort.
+    </p>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -112,5 +116,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script src="test.js"></script>
 </body>
 </html>

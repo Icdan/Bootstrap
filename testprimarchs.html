@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">-->
+    <link id="style1" rel="stylesheet" href="something.css" title="day">
 
     <title>Primarchs</title>
     <link rel="stylesheet" href="test.css" type="text/css">
@@ -61,34 +62,38 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
+            </div>
         </div>
     </nav>
-    <div id="intro">
-        <img id="intro-img" class="mx-auto mt-2" src="testimg/Alpharius.jpg">
-        <h1>Primarchs</h1>
-        <p id="testbody" class="mx-auto ca"> "They shall be my sons, and in them will live the hopes of a unified humanity. Theirs will be the strength
-            to prevail, not only when victory lies within easy reach, but even when it seems unattainable, when doom
-            settles like a shroud all about. In those times of darkness, my noble sons will shine the brightest of
-            all."
-        </p>
-        <p class="mx-5">
-            The Primarchs were the 20 genetically-engineered transhuman sons of the Emperor of Mankind created in the
-            late 30th Millennium after the end of the Unification Wars. They were intended to be the immortal and
-            superhuman leaders who would command the Emperor's Great Crusade to reunite the scattered human race beneath
-            His leadership. Their genomes later served as the genetic templates from which the Emperor crafted His 20
-            Space Marine Legions.
-            <br><br>
-            The Primarchs were bred to be perfect generals, warriors and statesmen; larger, stronger, faster, and
-            smarter than any normal human could ever hope to be. They possessed a charisma and martial prowess that made
-            them like the mythical gods of old, untouchable by disease, old age or supposedly the petty failings of
-            lesser men. The Primarchs were the Emperor's answer to reclaiming all the lost worlds of Mankind, and
-            welcoming them into His new Imperium. The Emperor intended to raise His sons to be the best military
-            commanders and political leaders Mankind had ever known, and they would bring the Imperial Truth to the rest
-            of the human-settled galaxy in their father's name. Yet for all their gifts, the Primarchs were still men,
-            and in the end their very human flaws would become the primary obstacle to the realisation of the Emperor's
-            great dream for Mankind.
-        </p>
-    </div>
+</div>
+<div id="intro">
+    <img id="intro-img" class="mx-auto mt-2" src="testimg/Alpharius.jpg">
+    <h1>Primarchs</h1>
+    <p id="intro-p" class="mx-auto ca"> "They shall be my sons, and in them will live the hopes of a unified humanity.
+        Theirs will be the strength
+        to prevail, not only when victory lies within easy reach, but even when it seems unattainable, when doom
+        settles like a shroud all about. In those times of darkness, my noble sons will shine the brightest of
+        all."
+    </p>
+    <p class="mx-5">
+        The Primarchs were the 20 genetically-engineered transhuman sons of the Emperor of Mankind created in the
+        late 30th Millennium after the end of the Unification Wars. They were intended to be the immortal and
+        superhuman leaders who would command the Emperor's Great Crusade to reunite the scattered human race beneath
+        His leadership. Their genomes later served as the genetic templates from which the Emperor crafted His 20
+        Space Marine Legions.
+        <br><br>
+        The Primarchs were bred to be perfect generals, warriors and statesmen; larger, stronger, faster, and
+        smarter than any normal human could ever hope to be. They possessed a charisma and martial prowess that made
+        them like the mythical gods of old, untouchable by disease, old age or supposedly the petty failings of
+        lesser men. The Primarchs were the Emperor's answer to reclaiming all the lost worlds of Mankind, and
+        welcoming them into His new Imperium. The Emperor intended to raise His sons to be the best military
+        commanders and political leaders Mankind had ever known, and they would bring the Imperial Truth to the rest
+        of the human-settled galaxy in their father's name. Yet for all their gifts, the Primarchs were still men,
+        and in the end their very human flaws would become the primary obstacle to the realisation of the Emperor's
+        great dream for Mankind.
+    </p>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -101,5 +106,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script src="test.js"></script>
 </body>
 </html>

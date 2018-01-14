@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"-->
+    <!--integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">-->
+    <link id="style1" rel="stylesheet" href="something.css" title="day">
 
     <title>Tyranids</title>
     <link rel="stylesheet" href="test.css" type="text/css">
@@ -61,44 +62,47 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div class="ml-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
+            </div>
         </div>
     </nav>
-    <div id="intro">
-        <img id="intro-img" class="mx-auto mt-2" src="testimg/tyranid.png">
-        <h1>Tyranids</h1>
-        <p id="testbody" class="mx-auto"> "I don't know where they come from. It seems highly unlikely that they evolved
-            naturally into what they are now - impossible, given what we know about evolution. Perhaps they are some
-            kind of bioweapon, created millennia ago by madmen for some long-forgotten war. If so, I suspect that their
-            creators soon came to regret their creation. Or perhaps they come straight from the warp. Possibly the Lords
-            of Chaos themselves cast them out because they were too unpleasant."
-        </p>
-        <p class="mx-5">
-            The Tyranids are an extragalactic composite species of hideous xenos that is actually a space-faring
-            ecosystem comprised of innumerable different bioforms which are all variations on the same genetic theme.
-            The Tyranid race is ultimately dedicated solely to its own survival, propagation and evolutionary
-            advancement. The Tyranids collectively form a monstrous superorganism that travels across the universe in
-            their great Hive Fleets of biomechanical Hive Ships, systematically consuming all other biomatter to enable
-            its own rapid evolution and reproduction. All Tyranid organisms are synaptic (psychically-reactive), and
-            each Tyranid creature within a Hive Fleet shares and contributes to a communal Hive Mind, which allows the
-            trillions of beings comprising the Tyranid Hive Fleets to communicate and organise instantaneously on a
-            staggering scale.
-            <br><br>
-            The mentality of the Tyranid approach to warfare can be described with the phrase "quantity has a quality
-            all its own". From the "lowly" Ripper, to the deadly Hive Tyrant and beyond, the signature of the Tyranid
-            species is that they overwhelm their foes with sheer numbers, reproducing massive numbers of highly virulent
-            organisms in record time from the biochemical soup that they derive from the biospheres of the worlds that
-            they consume. The components of a Tyranid Hive Fleet travel almost exclusively in large groups known as
-            swarms that possess specialized biomechanical creatures for destroying and consuming a wide variety of prey
-            life forms. Tyranids have evolved sophisticated methods for facilitating genetic transfer across species
-            boundaries. As a result, a significant goal of any Tyranid invasion is acquisition of useful new biological
-            traits from other lifeforms. These are used by the Hive Mind to enhance the Tyranids' effectiveness in
-            consuming new worlds to gain more of the necessary organic raw materials for further reproduction. All
-            Tyranids are reproduced by a single, highly intelligent female bioform known as a Norn-Queen. A Hive Fleet's
-            Norn-Queens are the most important Tyranids within the fleet, for if they are injured or killed the Tyranids
-            cannot reproduce their numbers from the captured bio-mass. As a result, Norn-Queens can be found only at the
-            heart of the largest and most-well defended Tyranid Hive Ships.
-        </p>
-    </div>
+</div>
+<div id="intro">
+    <img id="intro-img" class="mx-auto mt-2" src="testimg/tyranid.png">
+    <h1>Tyranids</h1>
+    <p id="intro-p" class="mx-auto ca"> "I don't know where they come from. It seems highly unlikely that they evolved
+        naturally into what they are now - impossible, given what we know about evolution. Perhaps they are some
+        kind of bioweapon, created millennia ago by madmen for some long-forgotten war. If so, I suspect that their
+        creators soon came to regret their creation. Or perhaps they come straight from the warp. Possibly the Lords
+        of Chaos themselves cast them out because they were too unpleasant."
+    </p>
+    <p class="mx-5">
+        The Tyranids are an extragalactic composite species of hideous xenos that is actually a space-faring
+        ecosystem comprised of innumerable different bioforms which are all variations on the same genetic theme.
+        The Tyranid race is ultimately dedicated solely to its own survival, propagation and evolutionary
+        advancement. The Tyranids collectively form a monstrous superorganism that travels across the universe in
+        their great Hive Fleets of biomechanical Hive Ships, systematically consuming all other biomatter to enable
+        its own rapid evolution and reproduction. All Tyranid organisms are synaptic (psychically-reactive), and
+        each Tyranid creature within a Hive Fleet shares and contributes to a communal Hive Mind, which allows the
+        trillions of beings comprising the Tyranid Hive Fleets to communicate and organise instantaneously on a
+        staggering scale.
+        <br><br>
+        The mentality of the Tyranid approach to warfare can be described with the phrase "quantity has a quality
+        all its own". From the "lowly" Ripper, to the deadly Hive Tyrant and beyond, the signature of the Tyranid
+        species is that they overwhelm their foes with sheer numbers, reproducing massive numbers of highly virulent
+        organisms in record time from the biochemical soup that they derive from the biospheres of the worlds that
+        they consume. The components of a Tyranid Hive Fleet travel almost exclusively in large groups known as
+        swarms that possess specialized biomechanical creatures for destroying and consuming a wide variety of prey
+        life forms. Tyranids have evolved sophisticated methods for facilitating genetic transfer across species
+        boundaries. As a result, a significant goal of any Tyranid invasion is acquisition of useful new biological
+        traits from other lifeforms. These are used by the Hive Mind to enhance the Tyranids' effectiveness in
+        consuming new worlds to gain more of the necessary organic raw materials for further reproduction. All
+        Tyranids are reproduced by a single, highly intelligent female bioform known as a Norn-Queen. A Hive Fleet's
+        Norn-Queens are the most important Tyranids within the fleet, for if they are injured or killed the Tyranids
+        cannot reproduce their numbers from the captured bio-mass. As a result, Norn-Queens can be found only at the
+        heart of the largest and most-well defended Tyranid Hive Ships.
+    </p>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -111,5 +115,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script src="test.js"></script>
 </body>
 </html>
