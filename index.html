@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">
+    <link rel="alternate stylesheet" href="smthn.css" title="night">
 
     <title>Warhammer 40.000</title>
     <link rel="stylesheet" href="test.css" type="text/css">
 </head>
-<body>
+<body class="testbody">
 <div id="wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -63,6 +64,7 @@
             </ul>
         </div>
     </nav>
+
 </div>
     <div id="intro">
         <img id="intro-img" class="mx-auto mt-2" src="testimg/drivemecloser.png" >
@@ -103,7 +105,12 @@
             of thirsting gods."
         </p>
     </div>
-
+<div id="form">
+<form>
+    <input class="hidebutton1" type="submit" onclick="switch_style('day');return false;" name="theme" value="Night theme: Off" id="day">
+    <input class="hidebutton2" type="submit" onclick="switch_style('night');return false; " name="theme" value="Night Theme: On" id="night">
+</form>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -115,5 +122,76 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
         integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
         crossorigin="anonymous"></script>
+<script>
+    function hide_other_button() {
+        var hidebutton = document.getElementsByClassname("input")
+        if (hidebutton.style.display === "none") {
+            hidebutton.style.display = "block";
+        } else {
+            hidebutton.style.display = "none";
+        }
+    }
+    // *** TO BE CUSTOMISED ***
+
+    var style_cookie_name = "style" ;
+    var style_cookie_duration = 30 ;
+    var style_domain = "thesitewizard.com" ;
+
+    // *** END OF CUSTOMISABLE SECTION ***
+    // You do not need to customise anything below this line
+
+    function switch_style ( css_title )
+    {
+    // You may use this script on your site free of charge provided
+    // you do not remove this notice or the URL below. Script from
+    // https://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+    var i, link_tag ;
+    for (i = 0, link_tag = document.getElementsByTagName("link") ;
+    i < link_tag.length ; i++ ) {
+    if ((link_tag[i].rel.indexOf( "stylesheet" ) != -1) &&
+    link_tag[i].title) {
+    link_tag[i].disabled = true ;
+    if (link_tag[i].title == css_title) {
+    link_tag[i].disabled = false ;
+    }
+    }
+    set_cookie( style_cookie_name, css_title,
+    style_cookie_duration, style_domain );
+    }
+    }
+    function set_style_from_cookie()
+    {
+    var css_title = get_cookie( style_cookie_name );
+    if (css_title.length) {
+    switch_style( css_title );
+    }
+    }
+    function set_cookie ( cookie_name, cookie_value,
+    lifespan_in_days, valid_domain )
+    {
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var domain_string = valid_domain ?
+    ("; domain=" + valid_domain) : '' ;
+    document.cookie = cookie_name +
+    "=" + encodeURIComponent( cookie_value ) +
+    "; max-age=" + 60 * 60 *
+    24 * lifespan_in_days +
+    "; path=/" + domain_string ;
+    }
+    function get_cookie ( cookie_name )
+    {
+    // https://www.thesitewizard.com/javascripts/cookies.shtml
+    var cookie_string = document.cookie ;
+    if (cookie_string.length != 0) {
+    var cookie_value = cookie_string.match (
+    '(^|;)[\s]*' +
+    cookie_name +
+    '=([^;]*)' );
+    return decodeURIComponent ( cookie_value[2] ) ;
+    }
+    return '' ;
+    }
+
+</script>
 </body>
 </html>

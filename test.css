@@ -1,21 +1,22 @@
 /*  Home    */
 
 #wrapper {
-    width: 1500px;
+    width: 100%;
     margin: auto;
+    background:white;
 }
 
 #intro-img {
     display: block;
-    width: 33%;
+    width: 25%;
 }
 
 #intro-img2 {
     display: block;
-    width: 15%;
+    width: 10%;
 }
 
-#intro-p {
+#testbody {
     display: block;
     width: 50%;
 }
@@ -28,3 +29,18 @@
     text-align: center;
 }
 
+#togBut {
+    border: 2px solid white;
+    border-radius: 25px;
+    background: #8296DF;
+    padding: 5px;
+}
+
+#togBut:hover {
+    background: black;
+    color: white;
+}
+
+#form {
+    text-align: center;
+}
