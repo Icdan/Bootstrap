@@ -20,7 +20,7 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 
-    if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
+    if (a.href === 'https://icdan.github.io/Bootstrap/something.css') {
         nightModeChaos.src = "testimg/ChaosStar.png";
         nightModeTau.src = "testimg/Tau.png";
         nightModeMan.src = "testimg/Aquila.png";
