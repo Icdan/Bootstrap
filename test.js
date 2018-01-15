@@ -10,7 +10,9 @@ function toggle() {
 }
 
 var nightModeChaos = document.getElementById('nightModeChaos');
-
+var nightModeTau = document.getElementById('nightModeTau');
+var nightModeMan = document.getElementById('nightModeMan');
+var nightModeOrk = document.getElementById('nightModeOrk');
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -20,11 +22,15 @@ function setCookie(cname, cvalue, exdays) {
 
     if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
         nightModeChaos.src = "testimg/ChaosStar.png";
-        console.log(5+5);
+        nightModeTau.src = "testimg/Tau.png";
+        nightModeMan.src = "testimg/Aquila.png";
+        nightModeOrk.src = "testimg/ork.png";
     }
     else {
         nightModeChaos.src = "testimg/ChaosStar02.png";
-        console.log(6+6);
+        nightModeTau.src = "testimg/Tau02.png";
+        nightModeMan.src = "testimg/Aquila02.png";
+        nightModeOrk.src = "testimg/ork02.png";
     }
 }
 
@@ -55,6 +61,18 @@ function setcss() {
     var a = document.getElementById("style1");
     file = getCookie('css') === null ? 'something' : getCookie('css');
     a.href = getCookie('css') + '.css';
+    if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
+        nightModeChaos.src = "testimg/ChaosStar.png";
+        nightModeTau.src = "testimg/Tau.png";
+        nightModeMan.src = "testimg/Aquila.png";
+        nightModeOrk.src = "testimg/ork.png";
+    }
+    else {
+        nightModeChaos.src = "testimg/ChaosStar02.png";
+        nightModeTau.src = "testimg/Tau02.png";
+        nightModeMan.src = "testimg/Aquila02.png";
+        nightModeOrk.src = "testimg/ork02.png";
+    }
 }
 
 // ------------------------------------------------------------------
