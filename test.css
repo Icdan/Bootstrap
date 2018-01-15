@@ -6,12 +6,12 @@
     background:white;
 }
 
-#intro-img {
+.intro-img {
     display: block;
     width: 25%;
 }
 
-#intro-img2 {
+.intro-img2 {
     display: block;
     width: 10%;
 }
