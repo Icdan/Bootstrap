@@ -20,27 +20,14 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 
-    if (a.href === 'https://icdan.github.io/Bootstrap/something.css') {
+    if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
         nightModeChaos.src = "testimg/ChaosStar.png";
-        nightModeTau.src = "testimg/Tau.png";
-        nightModeMan.src = "testimg/Aquila.png";
-        nightModeOrk.src = "testimg/ork.png";
     }
     else {
         nightModeChaos.src = "testimg/ChaosStar02.png";
-        nightModeTau.src = "testimg/Tau02.png";
-        nightModeMan.src = "testimg/Aquila02.png";
-        nightModeOrk.src = "testimg/ork02.png";
     }
 }
-
-
-
-
-
-
-
-
+ 
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -63,15 +50,9 @@ function setcss() {
     a.href = getCookie('css') + '.css';
     if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
         nightModeChaos.src = "testimg/ChaosStar.png";
-        nightModeTau.src = "testimg/Tau.png";
-        nightModeMan.src = "testimg/Aquila.png";
-        nightModeOrk.src = "testimg/ork.png";
     }
     else {
         nightModeChaos.src = "testimg/ChaosStar02.png";
-        nightModeTau.src = "testimg/Tau02.png";
-        nightModeMan.src = "testimg/Aquila02.png";
-        nightModeOrk.src = "testimg/ork02.png";
     }
 }
 
