@@ -1,7 +1,5 @@
 var a = document.getElementById("style1");
 
-
-
 function toggle() {
 
     a.x = 'smthn' === a.x ? 'something' : 'smthn'; // short if
@@ -9,23 +7,12 @@ function toggle() {
     setCookie('css', a.x, 2);
 }
 
-var nightModeChaos = document.getElementById('nightModeChaos');
-var nightModeTau = document.getElementById('nightModeTau');
-var nightModeMan = document.getElementById('nightModeMan');
-var nightModeOrk = document.getElementById('nightModeOrk');
-
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-
-    if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
-        nightModeChaos.src = "testimg/ChaosStar.png";
-    }
-    else {
-        nightModeChaos.src = "testimg/ChaosStar02.png";
-    }
+    nightModeChaotic();
 }
  
 function getCookie(cname) {
@@ -45,9 +32,14 @@ function getCookie(cname) {
 }
 
 function setcss() {
-    var a = document.getElementById("style1");
     file = getCookie('css') === null ? 'something' : getCookie('css');
     a.href = getCookie('css') + '.css';
+    nightModeChaotic();
+}
+
+var nightModeChaos = document.getElementById('nightModeChaos');
+
+function nightModeChaotic() {
     if (a.href === 'http://localhost:63342/Bootstrap/something.css') {
         nightModeChaos.src = "testimg/ChaosStar.png";
     }
@@ -55,55 +47,3 @@ function setcss() {
         nightModeChaos.src = "testimg/ChaosStar02.png";
     }
 }
-
-// ------------------------------------------------------------------
-//
-// // var n = 0;
-// // var m = 0;
-// // var l = 0;
-// // var z = 0;
-// //
-// // function toggleMan() {
-// //     if (n == 0) {
-// //         document.getElementById('nightModeMan').src = "testimg/Aquila02.png";
-// //         n = 1;
-// //     }
-// //     else {
-// //         document.getElementById('nightModeMan').src = "testimg/Aquila.png";
-// //         n = 0;
-// //     }
-// // }
-// //
-// // function toggleOrk() {
-// //     if (m == 0) {
-// //         document.getElementById('nightModeOrk').src = "testimg/ork02.png";
-// //         m = 1;
-// //     }
-// //     else {
-// //         document.getElementById('nightModeOrk').src = "testimg/ork.png";
-// //         m = 0;
-// //     }
-// // }
-// //
-// // function toggleTau() {
-// //     if (l == 0) {
-// //         document.getElementById('nightModeTau').src = "testimg/Tau02.png";
-// //         l = 1;
-// //     }
-// //     else {
-// //         document.getElementById('nightModeTau').src = "testimg/Tau.png";
-// //         l = 0;
-// //     }
-// // }
-// //
-// // function toggleChaos() {
-// //     if (b === 0) {
-// //         nightModeChaos().src = "testimg/ChaosStar02.png";
-// //
-// //     }
-// //     else if (b === 1) {
-// //         nightModeChaos().src = "testimg/ChaosStar.png";
-// //
-// //     }
-// // }
-//
