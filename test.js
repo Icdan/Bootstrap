@@ -47,3 +47,4 @@ function nightModeChaotic() {
         nightModeChaos.src = "testimg/ChaosStar02.png";
     }
 }
+

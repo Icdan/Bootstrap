@@ -44,3 +44,9 @@
 #form {
     text-align: center;
 }
+
+#searchbar {
+    width: 33%;
+    float: right;
+    margin-left: 23%;
+}

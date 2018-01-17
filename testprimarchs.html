@@ -13,7 +13,7 @@
     <title>Primarchs</title>
     <link rel="stylesheet" href="test.css" type="text/css">
 </head>
-<body>
+<body onload="setcss()">
 <div id="wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -62,6 +62,20 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div id="searchbar">
+                <script>
+                    (function() {
+                        var cx = '015081805999369540557:hhnzjdbe-58';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
             <div class="ml-auto">
                 <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
             </div>
@@ -98,80 +112,132 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Lion El'Jonson</h3>
+            <h5>The First</h5>
+            <h6>I Legion, Dark Angels</h6>
+            <h6>Loyalist</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Unknown</h3>
+            <h5>Unknown</h5>
+            <h6>II legion</h6>
+            <h6>Expunged from Imperial records</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Fulgrim</h3>
+            <h5>The Phoenician</h5>
+            <h6>III Legion, Emperor's Children</h6>
+            <h6>Traitor</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
-        </div>
-        <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
-        </div>
-        <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
-        </div>
-        <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Perturabo</h3>
+            <h5>Lord of Iron</h5>
+            <h6>IV Legion, Iron Warriors</h6>
+            <h6>Traitor</h6>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Jaghatai Khan</h3>
+            <h5>The Great Khan</h5>
+            <h6>V Legion, White Scars</h6>
+            <h6>Loyalist</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Leman Russ</h3>
+            <h5>Wolf King</h5>
+            <h6>VI Legion, Space Wolves</h6>
+            <h6>Loyalist</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Rogal Dorn</h3>
+            <h5>The Unielding One</h5>
+            <h6>VII Legion, Imperial Fists</h6>
+            <h6>Loyalist</h6>
         </div>
         <div class="col-3">
-            <h3></h3>
-            <h5></h5>
-            <h6></h6>
-            <h6></h6>
+            <h3>Konrad Curze</h3>
+            <h5>Night Haunter</h5>
+            <h6>VIII Legion, Night Lords</h6>
+            <h6>Traitor</h6>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-3">
+            <h3>Sanguinius</h3>
+            <h5>Brightest One</h5>
+            <h6>IX Legion, Blood Angels</h6>
+            <h6>Loyalist</h6>
+        </div>
+        <div class="col-3">
+            <h3>Ferrus Manus</h3>
+            <h5>The Gorgon</h5>
+            <h6>X Legion, Iron Hands</h6>
+            <h6>Loyalist</h6>
+        </div>
+        <div class="col-3">
+            <h3>Unknown</h3>
+            <h5>Unknown</h5>
+            <h6>XI legion</h6>
+            <h6>Expunged from Imperial records</h6>
+        </div>
+        <div class="col-3">
+            <h3>Angron</h3>
+            <h5>Red Angel</h5>
+            <h6>XII Legion, World Eaters</h6>
+            <h6>Traitor</h6>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-3">
+            <h3>Roboute Guillimans</h3>
+            <h5>the Blade of Unity</h5>
+            <h6>XIII Legion, Ultramarines</h6>
+            <h6>Loyalist</h6>
+        </div>
+        <div class="col-3">
+            <h3>Mortarion</h3>
+            <h5>Prince of Decay</h5>
+            <h6>XIV Legion, Death Guard</h6>
+            <h6>Traitor</h6>
+        </div>
+        <div class="col-3">
+            <h3>Magnus the Red</h3>
+            <h5>Crimson King</h5>
+            <h6>XV Legion, Thousand Sons</h6>
+            <h6>Traitor</h6>
+        </div>
+        <div class="col-3">
+            <h3>Horus</h3>
+            <h5>Lupercal</h5>
+            <h6>XVI Legion, Sons of Horus</h6>
+            <h6>Traitor</h6>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-3">
+            <h3>Lorgar</h3>
+            <h5>the Urizen</h5>
+            <h6>XVII Legion, Word Bearers</h6>
+            <h6>Traitor</h6>
+        </div>
+        <div class="col-3">
+            <h3>Vulkan</h3>
+            <h5>The Smith</h5>
+            <h6>XVIII Legion, Salamanders</h6>
+            <h6>Loyalist</h6>
+        </div>
+        <div class="col-3">
+            <h3>Corax</h3>
+            <h5>The Raven-Lord</h5>
+            <h6>XIX Legion, Raven Guard</h6>
+            <h6>Loyalist</h6>
+        </div>
+        <div class="col-3">
+            <h3>Alpharius Omegon</h3>
+            <h5>The Hydra</h5>
+            <h6>XX Legion, Alpha Legion</h6>
+            <h6>Declared Traitor</h6>
         </div>
     </div>
 

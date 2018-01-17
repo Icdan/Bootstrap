@@ -13,7 +13,7 @@
     <title>Space Marines</title>
     <link rel="stylesheet" href="test.css" type="text/css">
 </head>
-<body>
+<body onload="setcss()">
 <div id="wrapper">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -62,6 +62,20 @@
                     <a class="nav-link" href="testchaos.html">Chaos</a>
                 </li>
             </ul>
+            <div id="searchbar">
+                <script>
+                    (function() {
+                        var cx = '015081805999369540557:hhnzjdbe-58';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
             <div class="ml-auto">
                 <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
             </div>
@@ -104,6 +118,20 @@
         which the Space Marines are so prone to and which has seduced so many of their number to serve the Ruinous
         Powers of Chaos. They are the final guardians of Mankind, the saviours of last resort.
     </p>
+</div>
+<div>
+    <h4 class="ca">The following Legions still stand with their Emperor:</h4>
+    <ul class="ca" style="list-style-type: none;">
+        <li>I Legion, Dark Angels</li>
+        <li>V Legion, White Scars</li>
+        <li>VI Legion, Space Wolves</li>
+        <li>VII Legion, Imperial Fists</li>
+        <li>IX Legion, Blood Angels</li>
+        <li>X Legion, Iron Hands</li>
+        <li>XIII Legion, Ultramarines</li>
+        <li>XVIII Legion, Salamanders</li>
+        <li>XIX Legion, Raven Guard</li>
+    </ul>
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
