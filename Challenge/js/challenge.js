@@ -4,7 +4,6 @@ var afleverkosten = 4.95;
 var totaal = 0;
 var totaalbedrag = document.getElementById("totaalbedrag3");
 
-
 var subtotal1 = document.getElementById("subtotaal1");
 subtotal1.innerHTML = '€' + 0;
 var subtotal2 = document.getElementById("subtotaal2");
@@ -14,7 +13,6 @@ subtotal3.innerHTML = '€' + 0;
 
 var checkmark1 = document.getElementById("checkmark1");
 var checkmark2 = document.getElementById("checkmark2");
-var radio1 = document.getElementById("optionsRadios1");
 var radio2 = document.getElementById("optionsRadios2");
 
 function bereken() {
@@ -31,30 +29,17 @@ function bereken() {
     var product3 = 1.45 * inputParse3;
     var product32 = product3.toFixed(2);
 
-
     subtotal1.innerHTML = '€' + product12;
     subtotal2.innerHTML = '€' + product22;
     subtotal3.innerHTML = '€' + product32;
 
     totaal = 0;
-
-    if (checkmark1.checked && radio1.checked) {
-        totaal = product1 + product2 + product3 + snoepemmer + totaal;
-    } else if (checkmark1.checked && radio2.checked) {
-        totaal = product1 + product2 + product3 + snoepemmer + afleverkosten + totaal;
-    } else if (checkmark1.checked && checkmark2.checked && radio1.checked) {
-        totaal = product1 + product2 + product3 + snoepemmer + tandenborstel + totaal;
-    } else if (checkmark1.checked && checkmark2.checked && radio2.checked) {
-        totaal = product1 + product2 + product3 + snoepemmer + tandenborstel + afleverkosten + totaal;
-    } else if (checkmark2.checked && radio1.checked) {
-        totaal = product1 + product2 + product3 + tandenborstel + totaal;
-    } else if (checkmark2.checked && radio2.checked) {
-        totaal = product1 + product2 + product3 + tandenborstel + afleverkosten + totaal;
-    } else if (radio1.checked) {
-        totaal = product1 + product2 + product3 + totaal;
-    } else if (radio2.checked) {
-        totaal = product1 + product2 + product3 + afleverkosten + totaal;
-    }
+    totaal += product1;
+    totaal += product2;
+    totaal += product3;
+    if (checkmark1.checked) totaal += snoepemmer;
+    if (checkmark2.checked) totaal += tandenborstel;
+    if (radio2.checked) totaal += afleverkosten;
 
     var totaal2 = totaal.toFixed(2);
     totaalbedrag.innerHTML = 'Totaal: €' + totaal2;
