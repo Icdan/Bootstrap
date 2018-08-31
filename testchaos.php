@@ -1,87 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-    integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" title="day">
-    <link id="style1" rel="stylesheet" href="something.css" title="day">
-
+    <?php
+    include "include/header.php";
+    ?>
     <title>Chaos</title>
-    <link rel="stylesheet" href="test.css" type="text/css">
 </head>
 <body onload="setcss()">
-<div id="wrapper">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Homepage <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Races
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                        <a class="dropdown-item" href="testman.html">Man</a>
-                        <a class="dropdown-item" href="testtau.html">Tau</a>
-                        <a class="dropdown-item" href="testeldar.html">Eldar</a>
-                        <a class="dropdown-item" href="testorks.html">Orks</a>
-                        <a class="dropdown-item" href="testnecrons.html">Necrons</a>
-                        <a class="dropdown-item" href="testctan.html">C'tan</a>
-                        <a class="dropdown-item" href="testtyranid.html">Tyranids</a>
-                        <a class="dropdown-item" href="testdaemon.html">Daemon</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testemperor.html">God-Emperor of Mankind</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Space Marine Legions
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="testprimarchs.html">Primarchs</a>
-                        <a class="dropdown-item" href="testmarinesloy.html">Loyal Legions</a>
-                        <a class="dropdown-item" href="testmarineschaos.html">Chaos Legions</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testwarp.html">The Warp</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="testchaos.html">Chaos</a>
-                </li>
-            </ul>
-            <div id="searchbar">
-                <script>
-                    (function() {
-                        var cx = '015081805999369540557:hhnzjdbe-58';
-                        var gcse = document.createElement('script');
-                        gcse.type = 'text/javascript';
-                        gcse.async = true;
-                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(gcse, s);
-                    })();
-                </script>
-                <gcse:search></gcse:search>
-            </div>
-            <div class="ml-auto">
-                <button type="button" class="btn btn-outline-primary" onclick="toggle()">Night mode</button>
-            </div>
-        </div>
-    </nav>
-</div>
+<?php
+include "include/navbar.php";
+?>
 <div id="intro">
     <img id="nightModeChaos" class="mx-auto mt-2 intro-img" src="testimg/ChaosStar.png">
     <h1>Chaos</h1>
@@ -211,17 +139,8 @@
         </div>
     </div>
 </div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
-<script src="test.js"></script>
+<?php
+include "include/footer.php";
+?>
 </body>
 </html>

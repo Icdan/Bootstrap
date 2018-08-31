@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Homepage <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="home.php">Homepage <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
@@ -31,18 +31,18 @@
                         Races
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                        <a class="dropdown-item" href="testman.html">Man</a>
-                        <a class="dropdown-item" href="testtau.html">Tau</a>
-                        <a class="dropdown-item" href="testeldar.html">Eldar</a>
-                        <a class="dropdown-item" href="testorks.html">Orks</a>
-                        <a class="dropdown-item" href="testnecrons.html">Necrons</a>
-                        <a class="dropdown-item" href="testctan.html">C'tan</a>
-                        <a class="dropdown-item" href="testtyranid.html">Tyranids</a>
-                        <a class="dropdown-item" href="testdaemon.html">Daemon</a>
+                        <a class="dropdown-item" href="testman.php">Man</a>
+                        <a class="dropdown-item" href="testtau.php">Tau</a>
+                        <a class="dropdown-item" href="testeldar.php">Eldar</a>
+                        <a class="dropdown-item" href="testorks.php">Orks</a>
+                        <a class="dropdown-item" href="testnecrons.php">Necrons</a>
+                        <a class="dropdown-item" href="testctan.php">C'tan</a>
+                        <a class="dropdown-item" href="testtyranid.php">Tyranids</a>
+                        <a class="dropdown-item" href="testdaemon.php">Daemon</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="testemperor.html">God-Emperor of Mankind</a>
+                    <a class="nav-link" href="testemperor.php">God-Emperor of Mankind</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
@@ -50,16 +50,16 @@
                         Space Marine Legions
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                        <a class="dropdown-item" href="testprimarchs.html">Primarchs</a>
-                        <a class="dropdown-item" href="testmarinesloy.html">Loyal Legions</a>
-                        <a class="dropdown-item" href="testmarineschaos.html">Chaos Legions</a>
+                        <a class="dropdown-item" href="testprimarchs.php">Primarchs</a>
+                        <a class="dropdown-item" href="testmarinesloy.php">Loyal Legions</a>
+                        <a class="dropdown-item" href="testmarineschaos.php">Chaos Legions</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="testwarp.html">The Warp</a>
+                    <a class="nav-link" href="testwarp.php">The Warp</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="testchaos.html">Chaos</a>
+                    <a class="nav-link" href="testchaos.php">Chaos</a>
                 </li>
             </ul>
             <div id="searchbar">

@@ -50,3 +50,11 @@
     float: right;
     margin-left: 23%;
 }
+
+#loginContainer {
+    margin-top: 18%;
+}
+
+#loginBtn {
+    float: right;
+}
